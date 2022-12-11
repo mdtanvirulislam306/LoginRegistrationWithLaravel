@@ -13,8 +13,8 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('dashboard', function () {
+    return view('auth.dashboard');
 });
 Route::get('/', [UserController::class, 'dashboard']); 
 Route::get('login', [UserController::class, 'index'])->name('login');

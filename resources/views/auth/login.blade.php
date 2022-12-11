@@ -1,5 +1,5 @@
 	
-@extends('app')
+@extends('auth.dashboard')
  
  @section('content')
  <main class="login-form">
